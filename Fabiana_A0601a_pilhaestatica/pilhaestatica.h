@@ -11,6 +11,7 @@ portanto, foi preciso adaptar, criando dois ints, um SIM e um NAO. */
 #define MAX_ELEM 10 /** n° máximo de elementos na pilha */
 #define PILHA_VAZIA -1 /** valor que indica pilha vazia. Pode ser associado...
                      ... ao topo. Logo, se topo = -1 => Pilha Vazia */
+#define PILHA_CHEIA -2
 
 /** ESTRUTURA DE DADOS */
 struct Pilha{
@@ -23,6 +24,6 @@ int vazia(struct Pilha);
 int cheia(struct Pilha);
 void iniciarPilha(struct Pilha*); // passada por referência porque vai alterar a pilha
 char obterTopo(struct Pilha); // devolver o caracter que está no topo da pilha
-void listarElementos(struct Pilha);
-int inserir(struct Pilha*, char);
+void inserir(struct Pilha*, char);
 char remover(struct Pilha*);
+void mostrarPilha(struct Pilha);

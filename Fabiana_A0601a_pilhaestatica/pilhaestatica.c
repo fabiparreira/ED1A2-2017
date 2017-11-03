@@ -10,8 +10,6 @@
 */
 
 int vazia(struct Pilha p){
-    int i;
-
     if(p.topo == PILHA_VAZIA){
         return SIM;
     }
@@ -26,8 +24,6 @@ int vazia(struct Pilha p){
 */
 
 int cheia(struct Pilha p){
-    int i;
-
     if(p.topo == (MAX_ELEM - 1)){
         return SIM;
     }
@@ -43,11 +39,10 @@ int cheia(struct Pilha p){
 
 void iniciarPilha(struct Pilha* p){
     int i;
-    int n;
-    p->n=0; //A quantidade de elementos inicia com 0
+    //p->n=0; //A quantidade de elementos inicia com 0
 
     for (i=0;i<MAX_ELEM;i++){
-        p->elem[i]=0; // cada elemento é iniciado com valor nulo
+        p->elem[i]= 'x'; // cada elemento é iniciado com valor nulo
     }
 }
 
@@ -60,26 +55,24 @@ void iniciarPilha(struct Pilha* p){
 */
 
 char obterTopo(struct Pilha p){
-    if (p.topo== PILHA_VAZIA){
-        printf("\n ERRO! Pilha vazia!");
-    }else{
-        return p.topo;
+    char ct=0; // string nula
+    if (vazia(p) == NAO)
+        ct = p.elem[p.topo];
+    return ct;
 }
-
 
 /**
 * Insere um dado na pilha no topo, por pré-definição
 * @param p - struct Pilha a realizar a inserção.
 */
 
-void inserir(struct Pilha* p, char e){
-    if(p->topo == PILHA_CHEIA){
-        printf("\nErro ao inserir - Pilha cheia!\n");
-        return PILHA_CHEIA;
-    }else{
+void inserir(struct Pilha* p, char dado){
+    if (p->topo == MAX_ELEM-1)
+    //if(cheia(p) == SIM)
+        printf("\nErro ao inserir! Pilha cheia!\n");
+    else{
         p->topo++;
-        p->elem[p->topo] = e;
-        return SUCESSO;
+        p->elem[p->topo] = dado;
     }
 }
 
@@ -90,11 +83,23 @@ void inserir(struct Pilha* p, char e){
 
 char remover(struct Pilha* p){
     if(p->topo == PILHA_VAZIA){
-        printf("\nErro! PILHA VAZIA");
+        printf("\nErro ao remover! Pilha Vazia");
         return PILHA_VAZIA;
     }else{
         return p->elem[p->topo];
         p->elem[p->topo]=0;
         p->topo--;
+    }
+}
+
+/**
+* Mostra todos os dados da pilha.
+* @param p - struct Pilha a realizar a remoção.
+*/
+
+void mostrarPilha(struct Pilha p){
+    int i;
+    for(i=0; i<MAX_ELEM; i++){
+        printf("\nPosicao[%d] = %c\n", i, p.elem[i]);
     }
 }
