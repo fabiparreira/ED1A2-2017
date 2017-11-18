@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="pilhaestatica.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1491" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="183" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="pilhaestatica.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="243" topLine="14" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=574;besth=203;minw=574;minh=203;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|" />
+</CodeBlocks_layout_file>
