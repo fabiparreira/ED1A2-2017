@@ -23,8 +23,10 @@ int main(int argc, char** argv){
         printf("8- Mostrar a lista\n");
         printf("9- Extrair uma sublista da lista\n");
         printf("10- Concatenar a lista com uma nova lista\n");
-        printf("11- Intercalar duas listas\n");
-        printf("12- Finalizar programa\n\n");
+        printf("11- Localizar a posicao de um dado da listaNAO FUNCIONA\n");
+        printf("12- Colocar uma lista em ordem crescenteORDENA ERRADO\n");
+        printf("13- Intercalar duas listas\n");
+        printf("14- Finalizar programa\n\n");
         scanf("%d", &opcao);
         switch(opcao){
             case 1:
@@ -91,13 +93,25 @@ int main(int argc, char** argv){
                 mostrarLista(lisLinEs);
                 break;
             case 11:
+                //inicializando o vetor onde[];
+                /*int n,v = 0;
+                for(v=0; v < MAX_ELEM; v++){
+                    n[v]=0;
+                }
+                localizarNo(&lisLinEs,'L',onde[]);
+                break;*/
+            case 12:
+                ordenar(&lisLinEs);
+                mostrarLista(lisLinEs);
+                break;
+            case 13:
                 interLista(&lisLinEs, &lisLinEs);
                 break;
-            case 12:
+            case 14:
                 printf("\nPrograma Encerrado!");
                 break;
         }
-    }while(opcao!=12);
+    }while(opcao!=14);
 
 
     return 0;

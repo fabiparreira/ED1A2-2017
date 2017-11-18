@@ -15,6 +15,8 @@ struct Lista{
 };
 
 // FUNÇÕES REFERENTES E OPERAÇÕES EXEMPLO
+
+// A0501a
 void iniciarLista(struct Lista*); // ponteiro porque mexe na struct
 char acessar(struct Lista, int); // sem ponteiro porque só visualiza
 void alterar(struct Lista*, int, char); // ponteiro porque mexe na struct
@@ -25,5 +27,8 @@ void inverter(struct Lista*); // ponteiro porque mexe na struct
 struct Lista subLista(struct Lista, int, int); // sem ponteiro porque só retira parte, não altera nada
 void inserirOrdenado(struct Lista*, char); // ponteiro porque mexe na struct
 void mostrarLista(struct Lista); // sem ponteiro porque só mostra
+
+// A0501b
+int localizarNo(struct Lista* lst, char, int[]);//NAO FUNCIONA
 void interLista(struct Lista*, struct Lista*); // ponteiro porque manipula duas structs em uma terceira
-// SÓ FALTA IMPLEMENTAR void ordenar(struct Lista*);
+void ordenar(struct Lista*);//ponteiro porque manipula a lista

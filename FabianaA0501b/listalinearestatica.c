@@ -219,6 +219,32 @@ void mostrarLista(struct Lista lst){
 }
 
 /**
+* Localiza o nó que contém determinado valor de uma lista.
+* @param lst - Lista onde procurar o valor.
+* @param procurado - char que será buscado.
+* @param onde - int que representa o nó(índice) onde o dado será encontrado.
+*/
+
+int localizarNo(struct Lista* lst, char procurado, int onde[]){
+    int i = 0; // varredor
+    int p = 0; // posição onde está o dado procurado; foi inicializada pra evitar bug
+
+    if (lst->n == 0){ //se o tamanho da lista é zero, não tem como procurar
+        printf("\nImpossivel encontrar, pois a lista esta vazia!\n");
+    }else{
+        for(i=0; i < lst->n; i++){
+            if(lst->elem[i] == procurado){ //se a posição coincide com o dado
+                onde[p] = i; //a variável onde recebe o número da posição encontrada
+                p++; //incrementa-se pra ela poder acompanhar quantas vezes o laço ocorreu
+            //}else
+            //    printf("\n%c nao foi encontrado!\n",procurado);
+            }
+        }
+    }
+    return p;
+}
+
+/**
 * Intercala duas listas, resultando em uma terceira lista.
 * @param lst - Lista a ser exibida // ?
 */
@@ -229,5 +255,25 @@ void interLista(struct Lista* inter1, struct Lista* inter2){
     for (i=1; i<=limite; i++){
         inter1->elem[inter1->n] = inter2->elem[i-1];
         inter1->n++;
+    }
+}
+
+/**
+* Coloca uma lista em ordem crescente.
+* @param lst - Lista a ser ordenada.
+*/
+
+void ordenar(struct Lista* lst){
+    int i;
+    int j;
+    char aux; //variável pra ir guardando os elementos a serem postos em ordem
+    for(i=0; i < lst->n; i++){
+        for(j=j+1; j<lst->n; j++){
+            if(lst->elem[i] > lst->elem[j]){
+                aux = lst->elem[i];
+                lst->elem[i] = lst->elem[j];
+                lst->elem[j] = aux;
+            }
+        }
     }
 }
