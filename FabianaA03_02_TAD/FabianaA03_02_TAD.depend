@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1505768748 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_tad\conta.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"conta.h"
+
+1505266786 c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_tad\biblioteca.h
+
+1507024004 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_tad\main.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"conta.h"
+
+1505264895 c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_tad\conta.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"biblioteca.h"
+
+1507023259 c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_tad\conta.h
+
