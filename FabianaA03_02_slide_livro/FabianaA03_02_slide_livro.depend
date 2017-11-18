@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1504654503 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_slide_livro\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"biblioteca.h"
+
+1504654463 c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa03_02_slide_livro\biblioteca.h
+
