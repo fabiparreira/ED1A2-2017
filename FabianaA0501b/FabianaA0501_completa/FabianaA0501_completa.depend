@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1511112659 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa0501_completa\listalinearestatica.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+
+1511112541 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa0501_completa\main.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"listalinearestatica.h"
+
+1511112456 c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabianaa0501_completa\listalinearestatica.h
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+
