@@ -7,6 +7,8 @@ int main(int argc, char** argv){
     struct Lista lisLinEs; // lisLinEs = lista linear estática
     struct Lista lisConcat; // lisLinEs = lista linear estática
     struct Lista sl;
+    struct Lista inter1; // inter1 = lista linear estática
+    struct Lista inter2; // inter2 = lista linear estática
     int opcao;
     char c;
 
@@ -25,7 +27,7 @@ int main(int argc, char** argv){
         printf("10- Concatenar a lista com uma nova lista\n");
         printf("11- Localizar a posicao de um dado da listaNAO FUNCIONA\n");
         printf("12- Colocar uma lista em ordem crescenteORDENA ERRADO\n");
-        printf("13- Intercalar duas listas\n");
+        printf("13- Intercalar duas listasACUSA LISTA CHEIA\n");
         printf("14- Finalizar programa\n\n");
         scanf("%d", &opcao);
         switch(opcao){
@@ -105,7 +107,13 @@ int main(int argc, char** argv){
                 mostrarLista(lisLinEs);
                 break;
             case 13:
-                interLista(&lisLinEs, &lisLinEs);
+                inserir(&inter1, POS_FINAL, 'A');
+                inserir(&inter2, POS_FINAL, 'C');
+                inserir(&inter1, POS_FINAL, 'E');
+                inserir(&inter2, POS_FINAL, 'B');
+                inserir(&inter2, POS_FINAL, 'D');
+                inserir(&inter2, POS_FINAL, 'F');
+                interLista(&inter1, &inter2);
                 break;
             case 14:
                 printf("\nPrograma Encerrado!");

@@ -246,16 +246,38 @@ int localizarNo(struct Lista* lst, char procurado, int onde[]){
 
 /**
 * Intercala duas listas, resultando em uma terceira lista.
-* @param lst - Lista a ser exibida // ?
+* @param inter1 e inter2 - listas que serão intercaldas.
 */
 
-void interLista(struct Lista* inter1, struct Lista* inter2){
-    struct Lista inter3;
-    int i, limite;
-    for (i=1; i<=limite; i++){
-        inter1->elem[inter1->n] = inter2->elem[i-1];
-        inter1->n++;
+struct Lista interLista(struct Lista* inter1, struct Lista* inter2){
+    struct Lista intercalada;
+    int iFinal; // índice pra varrer lista intercalada
+    int i1;  // índice pra varrer lista inter1
+    int i2; // índice pra varrer lista inter2
+
+    //inicializando a intercalada na memória
+    iniciarLista(&intercalada);
+
+    //intercalando
+    for (iFinal=0, i1=0, i2=0; i1 < inter1->n && i2 < inter2->n; iFinal=iFinal+2){
+        inserir(&intercalada, iFinal, inter1->elem[i1]);
+        inserir(&intercalada, iFinal+1, inter2->elem[i2]);
+        i1++;
+        i2++;
     }
+
+ /*   while(i1 < inter1->n) {
+        inserir(&intercalada, iFinal, inter1->elem[i1]);
+        iFinal++;
+        i1++;
+    }
+
+    while(i2 < inter2->n){
+        inserir(&intercalada, iFinal, inter2->elem[i2]);
+        iFinal++;
+        i2++;
+    } */
+    return intercalada;
 }
 
 /**

@@ -30,5 +30,5 @@ void mostrarLista(struct Lista); // sem ponteiro porque só mostra
 
 // A0501b
 int localizarNo(struct Lista* lst, char, int[]);//NAO FUNCIONA
-void interLista(struct Lista*, struct Lista*); // ponteiro porque manipula duas structs em uma terceira
+struct Lista interLista(struct Lista*, struct Lista*); // ponteiro porque manipula duas structs em uma terceira
 void ordenar(struct Lista*);//ponteiro porque manipula a lista
