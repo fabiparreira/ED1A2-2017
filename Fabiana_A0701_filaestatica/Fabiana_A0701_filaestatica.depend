@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1511638617 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabiana_a0701_filaestatica\filaestatica1.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+
+1511638338 source:c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabiana_a0701_filaestatica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"filaestatica1.h"
+
+1511637693 c:\users\fabia\dropbox\ifsp_tecnológico análise e desenvolvimento de sistemas\disciplinas\2° semestre\estrutura de dados i_osvandre\fabiana_a0701_filaestatica\filaestatica1.h
+
